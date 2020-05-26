@@ -15,26 +15,31 @@ System.out.print("String is empty ");
         }     
 if (status == false) {
     System.out.println("error")
-    switch((int)count)
+    switch(count)
       { 
-        case '0'..'5':
+        case '4' :
             System.out.println("Может всё таки 3?"); 
             break;
-        case '6'..'7' :
+        case '6' :
+        case '7' :
+        case '9' :
             System.out.println("Может всё таки 8?");
             break;
-        case '10'..'15' :
+        case '10' :
+        case '11' :
+        case '12' :
+        
+        case '14' :
+        case '15' :
             System.out.println("Может всё таки 13?");
             break;
-        case '16'..'30' :
+        case '16' :
+        case '17' :
+        case '18' :
+        case '19' :
+        case '21' :
             System.out.println("Может всё таки 20?");
-            break;  
-        case '31'..'70' :
-            System.out.println("Может всё таки 40?");
-            break; 
-        case '71'..'150' :
-            System.out.println("Может всё таки 100?");
-            break;             
+        break;    
         default :
             System.out.println("А оно вам надо?");
       }
