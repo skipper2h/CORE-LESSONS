@@ -1,23 +1,24 @@
-array_digit  = [0,0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100]
+import ast # todo Парсинг строк, для coffee и ?, должен открывать, но не может
+array_digit  = [0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100]
 array_string = ['coffee', '?']
-poker_number = (input("Input "));
+poker_number = (input("Input "))
+vartype = (ast.literal_eval(poker_number)) # принимает тип входных данных 
 #определение в массиве или нет
-def seachint():
-    for i in array_digit:
-        if i == int(poker_number) or i == float(poker_number):
-            print ('poker');
-            break              
-        elif isinstance(poker_number, (int, float)) == True:  
-            print('nearest number is ', checknearest()); 
-            break
-        else: 
-            print ('input correct number');           
-#поиск ближайшего   
+def seachin():
+    if isinstance(vartype, (int, float)):
+        for i in array_digit:
+            if i == (vartype):
+                return print ('poker')      
+        print('nearest number is ', nearest(array_digit, vartype));                       
+    else:
+        print ('STOP THIS');  
+    if isinstance(poker_number, (str)):
+        for i in array_string:       
+            if poker_number == array_string: 
+                print ('think about it'); 
+    else:
+        print ('STOP THIS');                                
+# поиск ближайшего   
 def nearest(array, target): 
-   return array[min(range(len(array)), key = lambda i: abs(array[i]-target))]          
-def checknearest():
-    if poker_number.isdigit():    
-        return ((nearest(array_digit , int(poker_number))));
-    elif poker_number == array_string:
-        return ('think about it');    
-seachint();
+   return array[min(range(len(array)), key = lambda i: abs(array[i]-target))]           
+seachin()
