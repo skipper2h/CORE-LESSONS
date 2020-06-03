@@ -9,7 +9,7 @@ def seachin():  # определение типа данных и проверк
         # принимает тип входных данных
         vartype = (ast.literal_eval(poker_number))
     except (TypeError, ValueError):
-        print('Некорректный ввод')
+        return print('Некорректный ввод')
     if isinstance(vartype, (int, float)):
         for i in array_digit:
             if i == (vartype):
