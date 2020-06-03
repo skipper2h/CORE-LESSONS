@@ -1,4 +1,4 @@
-import ast # todo Парсинг строк, для coffee и ?, должен открывать, но не может
+import ast
 array_digit  = [0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100]
 array_string = ['coffee', '?']
 poker_number = (input("Input "))
