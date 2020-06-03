@@ -2,8 +2,7 @@ import ast # todo Парсинг строк, для coffee и ?, должен о
 array_digit  = [0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100]
 array_string = ['coffee', '?']
 poker_number = (input("Input "))
-
-def seachin():
+def seachin(): # определение типа данных и проверка принадлежности 
     try:
         vartype = (ast.literal_eval(poker_number)) # принимает тип входных данных  
     except (TypeError, ValueError):
@@ -20,15 +19,13 @@ def seachin():
             if poker_number == array_string: 
                 print ('think about it'); 
     else:
-        print ('STOP THIS');                                
-# поиск ближайшего   
-def nearest(array, target): 
-   return array[min(range(len(array)), key = lambda i: abs(array[i]-target))]
+        print ('STOP THIS');   
 
-      
+def nearest(array, target): # поиск ближайшего  
+   return array[min(range(len(array)), key = lambda i: abs(array[i]-target))]
+ 
 if poker_number in array_string: 
     print ('think about it')
 else:
     seachin()
-#определение в массиве или нет
            
