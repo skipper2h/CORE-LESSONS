@@ -11,9 +11,8 @@ def seachin():  # определение типа данных и проверк
     except (TypeError, ValueError):
         return print('Некорректный ввод')
     if isinstance(vartype, (int, float)):
-        for i in array_digit:
-            if i == (vartype):
-                return print('poker')
+        if vartype in array_digit:
+            return print('poker')
         print('nearest number is ', nearest(array_digit, vartype))
     if isinstance(poker_number, (str)):
         for i in array_string:
