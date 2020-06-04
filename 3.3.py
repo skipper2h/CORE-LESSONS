@@ -9,10 +9,12 @@ def seachin():  # определение типа данных и проверк
         # принимает тип входных данных
         vartype = (ast.literal_eval(poker_number))
     except (TypeError, ValueError):
-        return print('Некорректный ввод')
+        print('Некорректный ввод')
+        return 
     if isinstance(vartype, (int, float)):
         if vartype in array_digit:
-            return print('poker')
+            print('poker')
+            return 
         print('nearest number is ', nearest(array_digit, vartype))
     if isinstance(poker_number, (str)):
         for i in array_string:
