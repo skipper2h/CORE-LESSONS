@@ -23,14 +23,14 @@ public class MutableInteger
 	private int value;
 }
 
-def craftpre() {	
-	def count_pre = new MutableInteger(1)
+def craftpre(i) {	
+	def count_pre = new MutableInteger(i)
 	count_pre.add(1)
 	return count_pre.get()
 }
 
-def craftpost() {
-	def count_post = new MutableInteger(1)
+def craftpost(i) {
+	def count_post = new MutableInteger(i)
 	temp = count_post.get()
 	count_post.add(1)
 	return temp	
@@ -39,8 +39,8 @@ def craftpost() {
 
 for (i = 0; i <3; i++) {
 	
-	println ('preinc count ' + craftpre())
-	println ('postinc count ' + craftpost())
+	println ('preinc count ' + craftpre(1))
+	println ('postinc count ' + craftpost(1))
 	println ('-----------------------')
 }
 

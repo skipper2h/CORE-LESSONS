@@ -11,20 +11,20 @@ class MutableInteger:
 	def get(self):
 		return self.__value
 
-def craftpre():
-	count_pre =  MutableInteger(1) 	
+def craftpre(i):
+	count_pre =  MutableInteger(i) 	
 	count_pre.add(1)
 	return count_pre.get()
 
 
-def craftpost():
-	count_post =  MutableInteger(1)
+def craftpost(i):
+	count_post =  MutableInteger(i)
 	temp = count_post.get()
 	count_post.add(1)
 	return temp	
 
 
 
-print (craftpre())
-print (craftpost())
+print (craftpre(1))
+print (craftpost(1))
 print ("-----------------------")
