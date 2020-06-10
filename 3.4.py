@@ -17,7 +17,7 @@ def craftpre (value):
 
 
 def craftpost(value):
-	temp = MutableInteger(value.get())
+	temp = MutableInteger(value)
 	value.add(1)
 	return temp	
 

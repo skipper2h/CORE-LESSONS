@@ -26,7 +26,7 @@ MutableInteger craftpre(MutableInteger value) {
 }
 
 MutableInteger craftpost(MutableInteger value) {
-	temp = new MutableInteger (value.get())
+	temp = new MutableInteger (value)
 	value.add(1)
 	return temp	
 }
