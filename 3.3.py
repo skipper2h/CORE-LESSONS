@@ -16,17 +16,13 @@ def seachin():  # определение типа данных и проверк
             print('poker')
             return 
         print('nearest number is ', nearest(array_digit, vartype))
-    if isinstance(poker_number, (str)):
-        for i in array_string:
-            if poker_number == array_string:
-                print('think about it')
-
+   
 
 def nearest(array, target):  # поиск ближайшего
     return array[min(range(len(array)), key=lambda i: abs(array[i]-target))]
 
 
 if poker_number in array_string:
-    print('think about it')
+    print('poker, the nearest value 4 u is holidays ¯\_(ツ)_/¯')
 else:
     seachin()
